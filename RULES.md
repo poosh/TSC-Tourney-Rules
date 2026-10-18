@@ -154,15 +154,10 @@ This is the official set of rules (**Tournament Rules**) for the **Team Survival
 
 ## 10. Game Progress
 
-### 10.1. Warmup
+### 10.1. Pre-Game
 1. Both teams should join the server **10 minutes** before their scheduled game time.
-2. **5 minutes** before the scheduled time, the *Warmup* match begins to check if everything is fine (*PING*, config, etc.).
-3. If both teams lack players 5 minutes before the scheduled time, *Warmup* gets skipped.
-4. The *Warmup* match begins regardless of the other team's player count; even "4 vs. 0" is acceptable. Late joiners miss the *Warmup*.
-5. *Warmup* is played on the same map as the upcoming *Match*.
-6. At the start of **Wave 2** or if **3 real-time minutes** pass (whichever occurs first), the map gets restarted (`MVOTE MAP RESTART`) to prepare for the *Tournament Game* to start (`10.2.1`).
-7. Both teams can agree to skip the *Warmup*.
-8. *Warmup* stats (kills, deaths, etc.) are excluded from *Tournament Statistics* and have no effect on the *Tournament Game*.
+2. We removed Warmup because restarting a map after Warmup can risk a game crash. For example, a player could be fine during the warmup but crash after the map restart.
+3. All players are encouraged to join the Tournament Server a day before a scheduled game to pre-cache the custom content and ensure everything is fine.
 
 ### 10.2. Game Start
 1. The *Tournament Game* starts **exactly** at the scheduled time unless delayed by the *TA*, for example, if the previous game runs over.
@@ -177,8 +172,7 @@ This is the official set of rules (**Tournament Rules**) for the **Team Survival
 1. The second map is played in **Short** mode (5 *Main Waves*, no *Overtime*) if one of the teams scored 4 *Tourney Points* in the first map (`4:0`, *Main Time* win).
 2. The second map is scheduled **5 minutes** after the first one ends if both are played on the same server.
 3. The second map is scheduled **10 minutes** after the first one ends if it needs to be played on a different server.
-4. The second *Warmup* is played only if maps are played on different servers.
-5. A team cannot initiate the map restart (`10.6`) if it triggered the map restart or used **all** its pause votes in the previous map.
+4. A team cannot initiate the map restart (`10.6`) if it triggered the map restart or used **all** its pause votes in the previous map.
 
 ### 10.4. Tiebreaker
 1. *Tiebreaker*, if needed, is scheduled **5 minutes** after the second map and is played on the same server as the second map.
