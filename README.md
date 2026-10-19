@@ -2,7 +2,7 @@
 The official Killing Floor Team Survival Competition Tournament rule set.
 
 ## Important Dates
-- **TSC3** Sign-up begins: **Saturday, October 17, 2026.**
+- **TSC3** Sign-up begins: **Saturday, October 24, 2026, 17:00 UTC.**
 - **TSC3** The first game: **Saturday, November 28, 2026.**
 - **TSC3** Next games: every **Saturday** until **December 19, 2026**
 - **TSC4**: **April - May, 2027**
