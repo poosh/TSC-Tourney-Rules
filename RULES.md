@@ -147,10 +147,10 @@ This is the official set of rules (**Tournament Rules**) for the **Team Survival
 ### 9.3. Map and Order Selection
 1. The team *Captain* chooses one of the opponent's *Home Maps* to play.
 2. The *Red Team Captain* chooses the map play order, except for the *Preliminary Round*.
-3. The *TA* announces the **deadline** for the map/order selection.
-4. If the team *Captain* hasn't posted their map choice before the *deadline*, the least recently played *Home Map* gets automatically selected (or chosen by the *TA* in the *Preliminary Round*).
-5. In the *Preliminary Round* or if the *Red Team Captain* hasn't posted their map order choice before the *deadline*, the *Red Home Map* is played first, except for **SA vs. EU**, where the *EU Home Map on the NA Server* is played first to match the `9.2.4 - 9.2.7` rules.
-6. **Game #12** forces the rules `9.3.4` and `9.3.5`, as the *deadline* expires before the team pair is known.
+3. The *TA* announces the **Deadline** for the map/order selection.
+4. If the team *Captain* hasn't posted their map choice before the *Deadline*, the least recently played *Home Map* gets automatically selected (or chosen by the *TA* in the *Preliminary Round*).
+5. In the *Preliminary Round* or if the *Red Team Captain* hasn't posted their map order choice before the *Deadline*, the *Red Home Map* is played first, except for **SA vs. EU**, where the *EU Home Map on the NA Server* is played first to match the `9.2.4 - 9.2.7` rules.
+6. *Games* **#12**, **#14**, and **#15** force the rules `9.3.4` and `9.3.5`, as their *Deadlines* expire before the team pairs are known.
 
 ## 10. Game Progress
 
