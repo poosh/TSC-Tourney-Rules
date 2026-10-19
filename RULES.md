@@ -186,9 +186,8 @@ This is the official set of rules (**Tournament Rules**) for the **Team Survival
 ### 10.6. Map Restart
 1. If a team encounters technical issues at the map start (player crash, disconnect, visual glitches, etc.), the *Captain* may ask for a **map restart** (`MVOTE MAP RESTART` or ask the *Referee* to do so).
 2. A map restart must be initiated within the first **30 gameplay seconds** of the match. The *Captain* can quickly chat "re" first (to meet the 30-second mark), then explain the case in the follow-up message.
-3. The team that initiated a map restart loses its pause-voting rights (`10.5`).
-4. After the first **30 gameplay seconds** of the match, no excuses are taken into account (such as disconnecting, crashing, high *PING*, etc.). If you crash, reconnect as quickly as possible. If your team got wiped because of it, that's on you.
-5. Map restart adds **5 minutes** toward the game delay `10.2.2`. Map restart is prohibited if the team has already delayed the game for **more than 5 minutes**.
+3. After the first **30 gameplay seconds** of the match, no excuses are taken into account (such as disconnecting, crashing, high *PING*, etc.). If you crash, reconnect as quickly as possible. If your team got wiped because of it, that's on you.
+4. Map restart adds **5 minutes** toward the game delay `10.2.2`. Map restart is prohibited if the team has already delayed the game for **more than 5 minutes**.
 
 ### 10.7. Technical Issues
 1. Crashed/disconnected players may rejoin the game mid-wave, unless their team got wiped out during the reconnect.
