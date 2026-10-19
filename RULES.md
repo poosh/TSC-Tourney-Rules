@@ -213,7 +213,7 @@ This is the official set of rules (**Tournament Rules**) for the **Team Survival
 1. TSC automatically detects **10+ zeds behind a welded door** and **marks** the door for all players.
 2. The *marked* door gets auto-destroyed in **20 seconds** (**10 seconds** in *Overtime*) if it is still under zed attack.
 3. The door auto-destruct timer gets reset 30 seconds after the last zed attack.
-4. **Total welding** inside a room or an area, where **all** doors are welded, and zeds are unable to reach the team, is considered an *Exploit* unless there are two or more active hidden zed spawn volumes (`ZombieVolume`) that cannot be blocked by player proximity or visibility.
+4. **Total welding** inside a room or an area, where **all** doors are welded, and zeds are unable to reach the team, is considered an *Exploit* unless there are two or more active hidden zed spawn volumes (`ZombieVolume`) in the area that cannot be blocked by player proximity or visibility.
 5. The above rule is not applied during *Trader Time* or when an opponent player is inside the welded area.
 
 ### 10.12. Exploits, Glitches, and Tricks
