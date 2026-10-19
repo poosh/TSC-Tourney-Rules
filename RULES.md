@@ -161,8 +161,8 @@ This is the official set of rules (**Tournament Rules**) for the **Team Survival
 
 ### 10.2. Game Start
 1. The *Tournament Game* starts **exactly** at the scheduled time unless delayed by the *TA*, for example, if the previous game runs over.
-2. The team *Captain* has the right to delay the start of the game for up to **10 minutes** due to technical difficulties. In that case, the team loses its pause-voting (`10.5`) and map-restarting (`10.6`) rights.
-3. In an emergency, a team may start a game with **3 players** (in **3v4** format) if they cannot find a 4th member.
+2. The team *Captain* has the right to delay the game for up to **10 minutes** due to technical difficulties.
+3. In an emergency, a team may start a game with **3 players** (in **3v4** or **3v3**format) if they cannot find a 4th member.
 4. In a **3v4** game, TSC automatically balances team health by granting **133hp** and **+33% Syringe** healing rate to the smaller team members. Otherwise, teams are treated equally, and being the smaller team doesn't excuse losing the game or asking for any advantage or compensation.
 5. The 4th player may join in later waves if they couldn't make it for the start.
 6. If a team doesn't have even **3 players** for the game start, it gets **disqualified** from the *Tournament*, loses its place in the *Tournament Table*, doesn't get any *Prizes*, and loses its *Deposit*.
@@ -182,13 +182,14 @@ This is the official set of rules (**Tournament Rules**) for the **Team Survival
 1. Each team *Captain* has the right to initiate a **1-minute pause** (`MVOTE PAUSE 60`) **twice** in the game (once per map; twice on the same map and none on the other; or even twice in a row) or ask a *Referee* to force it at the end of the current wave.
 2. Pauses can be called only at the start of *Trader Time*, during its first 20 seconds.
 3. Pauses during a wave are prohibited.
+4. Pause time counts toward the game delay `10.2.2`, rounded up to a whole minute. Pause voting is prohibited if the team has already delayed the game for **more than 8 minutes**.
 
 ### 10.6. Map Restart
 1. If a team encounters technical issues at the map start (player crash, disconnect, visual glitches, etc.), the *Captain* may ask for a **map restart** (`MVOTE MAP RESTART` or ask the *Referee* to do so).
 2. A map restart must be initiated within the first **30 gameplay seconds** of the match. The *Captain* can quickly chat "re" first (to meet the 30-second mark), then explain the case in the follow-up message.
-3. The team can initiate a map restart only once per *Game*.
-4. The team that initiated a map restart loses its pause-voting rights (`10.5`).
-5. After the first **30 gameplay seconds** of the match, no excuses are taken into account (such as disconnecting, crashing, high *PING*, etc.). If you crash, reconnect as quickly as possible. If your team got wiped because of it, that's on you.
+3. The team that initiated a map restart loses its pause-voting rights (`10.5`).
+4. After the first **30 gameplay seconds** of the match, no excuses are taken into account (such as disconnecting, crashing, high *PING*, etc.). If you crash, reconnect as quickly as possible. If your team got wiped because of it, that's on you.
+5. Map restart adds **5 minutes** toward the game delay `10.2.2`. Map restart is prohibited if the team has already delayed the game for **more than 5 minutes**.
 
 ### 10.7. Technical Issues
 1. Crashed/disconnected players may rejoin the game mid-wave, unless their team got wiped out during the reconnect.
@@ -199,7 +200,6 @@ This is the official set of rules (**Tournament Rules**) for the **Team Survival
 1. Players are allowed to initiate a *Boring Vote* (`MVOTE BORING`) to boost the zed spawn rate if they feel the game pace is too slow.
 2. If the *Boring Vote* fails, the initiating team is prohibited from repeating the vote until the end of the wave.
 3. Dead players are not allowed to initiate a *Boring Vote*.
-4. A *Boring Vote* is prohibited in a **3v4** game.
 
 ### 10.9. Perk Selection
 1. Any player can select any available perk.
@@ -317,6 +317,40 @@ This is the official set of rules (**Tournament Rules**) for the **Team Survival
 13. A *Reserve Player* may take a teammate's player seat if the latter has disconnected from the server due to technical issues.
 14. If a player reconnects after the *Reserve Player* has taken their seat, the former is considered a *Reserve Player* from now on and must follow the respective rules, including the footage record requirement, or leave the server.
 15. Only **one** *Reserve Player* is permitted to spectate the game on the KF server. If the team has multiple *Reserve Players* according to the `4.8` rule, they must choose one for the *Game*.
+
+## 18. Referee Guidelines
+1. *Referees* should join the game **10 minutes** before the scheduled game time.
+2. A *Referee* invokes the following console commands before each *Match*:
+    - `MVOTE CLAN GAME <A> <B> 4` - to force a 4v4 game between two teams.
+    - `MVOTE CLAN ADD <player> GUEST` - for each *Guest* on the server (if there are any).
+    - `MVOTE CLAN LOCKSPEC` - to prohibit random spectators.
+3. **1 minute** before the game schedule a *Referee* tells the players to ready up.
+4. A *Referee* forces `MVOTE READY` if there are 8 players on the server (4 in each team) and the game still hasn't been started at the scheduled time due to not enough players clicking "Ready".
+5. Do not force `MVOTE READY` if the game auto-start countdown is in progress and it is lower than **30 seconds**.
+6. If a team has only **3 players**, ask the *Captain* what to do: start in **3v4** format or delay the game according to `10.2.2`. Force `MVOTE READY` if the *Captain* doesn't ask for a match delay within **1 minute**.
+7. If a team has 2 or fewer players, force the game delay according to `10.2.2`.
+8. When the game delay triggered by the above rules is depleted, force `MVOTE READY` if both teams have at least **3 players** each. Otherwise, **abort** the *Game* and, if possible, proceed with **Faked Game** (`19`).
+9. When a team *Captain* types "re" or initiates a map-restart vote according to `10.6`, force `MVOTE MAP RESTART` if the team still has map-restart rights. Otherwise, tell the team why it isn't available.
+10. When a team *Captain* asks for a pause during a wave, force `MVOTE PAUSE 60` at the start of the next *Trader Time* according to `10.5`, or inform the team why it is not available. Broadcast a message about the scheduled pause.
+11. Force `MVOTE PAUSE 60` if a team *Captain* asks for a pause or initiates pause voting within the first **20 seconds** of the *Trader Time*.
+12. The players are allowed to initiate only the following votes:
+    - `MVOTE MAP RESTART` - during the first **30 seconds** of the *Match*
+    - `MVOTE PAUSE` - during the first **20 seconds** of a *Trader Time*
+    - `MVOTE BORING`
+    - `MVOTE END TRADE`
+    - `MVOTE TEAM CAPTAIN` - during the *Lobby*
+    - `MVOTE TEAM CARRIER` - during the *Lobby*
+13. Force-deny an illegal vote coming from players and issue a warning to the player who initiated it (via `MVOTE BLAME`).
+
+## 19. Faked Game
+1. If a team has no opponent to play against (e.g., the opponent got disqualified or hasn't existed), a **Faked Game** is played to determine *Tourney Points*.
+2. In a *Faked Game*, a single-team TSC game is played (with no opponents).
+3. If the *Map Selection* has been done according to `9.3`, the selected maps are played. Otherwise, the team plays one of its *Home Maps*, and the *TA* selects the second map.
+4. A *Faked Game* is played on the team's *Home Region Server*.
+4. Surviving the *Main Waves* of a *Faked Match* grants **2 TP**.
+5. Surviving the *Overtime* wave grants an extra point - **3 TP** in total.
+6. Surviving the *Sudden Death* wave grants an extra point - **4 TP** in total.
+7. The team advances to the next *Round* even if it has been wiped out early in both *Matches* (**0 TP**).
 
 ## Force Majeure
 The *TA* reserves the right to make any decisions they see as right and fair in any cases that are not covered by these *Tournament Rules*.
