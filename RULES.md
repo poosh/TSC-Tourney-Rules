@@ -162,7 +162,7 @@ This is the official set of rules (**Tournament Rules**) for the **Team Survival
 ### 10.2. Game Start
 1. The *Tournament Game* starts **exactly** at the scheduled time unless delayed by the *TA*, for example, if the previous game runs over.
 2. The team *Captain* has the right to delay the game for up to **10 minutes** due to technical difficulties.
-3. In an emergency, a team may start a game with **3 players** (in **3v4** or **3v3**format) if they cannot find a 4th member.
+3. In an emergency, a team may start a game with **3 players** (in **3v4** or **3v3** format) if they cannot find a 4th member.
 4. In a **3v4** game, TSC automatically balances team health by granting **133hp** and **+33% Syringe** healing rate to the smaller team members. Otherwise, teams are treated equally, and being the smaller team doesn't excuse losing the game or asking for any advantage or compensation.
 5. The 4th player may join in later waves if they couldn't make it for the start.
 6. If a team doesn't have even **3 players** for the game start, it gets **disqualified** from the *Tournament*, loses its place in the *Tournament Table*, doesn't get any *Prizes*, and loses its *Deposit*.
@@ -172,7 +172,6 @@ This is the official set of rules (**Tournament Rules**) for the **Team Survival
 1. The second map is played in **Short** mode (5 *Main Waves*, no *Overtime*) if one of the teams scored 4 *Tourney Points* in the first map (`4:0`, *Main Time* win).
 2. The second map is scheduled **5 minutes** after the first one ends if both are played on the same server.
 3. The second map is scheduled **10 minutes** after the first one ends if it needs to be played on a different server.
-4. A team cannot initiate the map restart (`10.6`) if it triggered the map restart or used **all** its pause votes in the previous map.
 
 ### 10.4. Tiebreaker
 1. *Tiebreaker*, if needed, is scheduled **5 minutes** after the second map and is played on the same server as the second map.
